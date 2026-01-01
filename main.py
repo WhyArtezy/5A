@@ -85,7 +85,7 @@ def jalankan_bot():
 
                 if code == 0 or has_token:
                     berhasil_count += 1
-                    print(f"\n[!!!] BERHASIL KE-{berhasil_count}: 62{nomor_target}")
+                    print(f"\n[!!!] BERHASIL KE-{berhasil_count}: 65{nomor_target}")
                     with open("hasil_reg.txt", "a") as f:
                         f.write(f"{nomor_target}|masuk123\n")
                     
