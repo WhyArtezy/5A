@@ -17,7 +17,7 @@ def get_random_proxy():
     except Exception: return None
 
 def generate_random_phone():
-    return "8" + "9".join([str(random.randint(0, 9)) for _ in range(7)])
+    return "8" + "".join([str(random.randint(0, 9)) for _ in range(7)])
 
 def jalankan_bot():
     # --- INPUT USER ---
