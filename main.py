@@ -86,7 +86,7 @@ def jalankan_bot():
                 if code == 0 or has_token:
                     berhasil_count += 1
                     print(f"\n[!!!] BERHASIL KE-{berhasil_count}: 65{nomor_target}")
-                    with open("hasil_reg.txt", "a") as f:
+                    with open("result.txt", "a") as f:
                         f.write(f"{nomor_target}|masuk123\n")
                     
                     nomor_target = generate_random_phone() # Ganti nomor untuk akun selanjutnya
