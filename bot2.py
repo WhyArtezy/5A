@@ -22,7 +22,7 @@ def generate_random_phone():
 def jalankan_bot():
     # --- INPUT USER ---
     print("="*40)
-    print("      BOT AUTO REG CATAPULT")
+    print("      AUTO REGISTER 5A FUND")
     print("="*40)
     invite_code = input("Masukkan Kode Invite: ").strip()
     try:
@@ -70,12 +70,12 @@ def jalankan_bot():
                 
                 # 3. Kirim Pendaftaran
                 payload = {
-                    "area": "62", "phone": nomor_target,
+                    "area": "65", "phone": nomor_target,
                     "captcha_code": kode_ocr, "captcha_key": captcha_key,
                     "country": "ID", "device_number": str(uuid.uuid4()),
                     "invite_code": invite_code, # Menggunakan input user
-                    "password": "Alwi!1202",
-                    "reg_type": "phone", "repassword": "Alwi!1202"
+                    "password": "masuk123",
+                    "reg_type": "phone", "repassword": "masuk123"
                 }
 
                 res_reg = session.post("https://www.5a.fund/api/v1/users", json=payload, headers=headers, timeout=15).json()
@@ -87,7 +87,7 @@ def jalankan_bot():
                     berhasil_count += 1
                     print(f"\n[!!!] BERHASIL KE-{berhasil_count}: 62{nomor_target}")
                     with open("hasil_reg.txt", "a") as f:
-                        f.write(f"62{nomor_target}|Alwi!1202|Reff:{invite_code}\n")
+                        f.write(f"{nomor_target}|masuk123\n")
                     
                     nomor_target = generate_random_phone() # Ganti nomor untuk akun selanjutnya
                 
